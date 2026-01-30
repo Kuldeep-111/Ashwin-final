@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { HiOutlineChevronLeft, HiOutlineChevronRight } from 'react-icons/hi';
 import type { Swiper as SwiperType } from 'swiper';
+import Lightbox from "yet-another-react-lightbox";
 
 const features = [
   { image: "/images/micro/floorplan/floor.png", name: "Tower Aurelia Floor Plan 7", typology: "3 BHK (10th-51st Floor)" },
@@ -17,7 +18,7 @@ const features = [
 ];
 
 const masterData = {
-  image: "/images/micro/floorplan/master.jpg",
+  image: "/images/micro/floorplan/master.webp",
   alt: "Master Plan",
 };
 
@@ -25,9 +26,25 @@ const FloorPlans = () => {
   const [activeTab, setActiveTab] = useState<'floorplan' | 'masterplan'>('floorplan');
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef<SwiperType | null>(null);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+const [lightboxIndex, setLightboxIndex] = useState(0);
+
+const floorSlides = features.map((item) => ({
+  src: item.image,
+  title: item.name,
+  description: item.typology,
+}));
+
+const masterSlides = [
+  {
+    src: masterData.image,
+    title: masterData.alt,
+  },
+];
 
   return (
-    <section className="pb-[100px] bg-[#FEF7F0]">
+    <>
+      <section className="pb-[100px] bg-[#FEF7F0]">
       <div className="container mx-auto px-[80px] text-center">
 
         <h2 className="text-[38px] leading-[60px] tracking-[1px] font-normal text-[#E37D24] mb-12">
@@ -96,6 +113,10 @@ const FloorPlans = () => {
                       src={item.image}
                       alt={item.name}
                       className="mx-auto h-[250px] object-contain"
+                      onClick={() => {
+    setLightboxIndex(idx);
+    setLightboxOpen(true);
+  }}
                     />
                     </div>
 
@@ -116,6 +137,10 @@ const FloorPlans = () => {
               src={masterData.image}
               alt={masterData.alt}
               className="h-[500px] mx-auto object-contain"
+              onClick={() => {
+    setLightboxIndex(0);
+    setLightboxOpen(true);
+  }}
             />
           </div>
         )}
@@ -124,6 +149,16 @@ const FloorPlans = () => {
 
       
     </section>
+
+    <Lightbox
+  open={lightboxOpen}
+  close={() => {
+    setLightboxOpen(false);
+  }}
+  index={lightboxIndex}
+  slides={activeTab === 'floorplan' ? floorSlides : masterSlides}
+/>
+    </>
   );
 };
 

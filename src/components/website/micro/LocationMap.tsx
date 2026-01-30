@@ -122,7 +122,11 @@ const LocationMap = () => {
                     <div key={index} className='w-full flex justify-between items-center text-black'><span>{item.title}</span> <span>{item.distance}</span></div>
                 ))}
             </div>
-            <img src="/images/micro/location/map.png" alt="map"  className='h-[500px] w-full object-cover'/>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.716561316398!2d72.84200073488769!3d19.207578299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6d9129510a1%3A0xae98e7bd01d78422!2sSheth%20Edmont%20Kandivali!5e0!3m2!1sen!2sin!4v1769774277092!5m2!1sen!2sin" width="600" height="500" style={{
+              border:0,
+              width:"100%"
+            }} loading="lazy" ></iframe>
+            {/* <img src="/images/micro/location/map.png" alt="map"  className='h-[500px] w-full object-cover'/> */}
         </div>
 
         </div>

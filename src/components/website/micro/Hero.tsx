@@ -1,4 +1,5 @@
 'use client';
+// import { useLenis } from '@studio-freight/react-lenis'
 
 // import { fadeUp } from '@/lib/animations';
 // import { useEffect, useRef } from 'react';
@@ -10,9 +11,19 @@ const Hero = () => {
     //     if (infoBarRef.current) fadeUp(infoBarRef.current, 0.5);
     // }, []);
 
+    // const lenis = useLenis();
+
+    // const scrollToFooter = ()=>{
+    //     lenis.scrollTo('#footer', {
+    //         offset: 0,
+    //         duration: 1.2,
+    //         easing: (t:any) => 1 - Math.pow(1 - t, 3), // optional smooth easing
+    //     });
+    // }
+
   return (
-    <section className='relative bg-white h-screen'>
-          <div className="h-[80vh] w-full relative bg-black">
+    <section className='relative bg-white'>
+          <div className="h-[90vh] w-full relative bg-black">
               <video
                   src="/videos/micro/hero.mp4"
                   autoPlay

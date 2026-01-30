@@ -10,12 +10,12 @@ export default function Header() {
         // Header visibility is controlled by MasterSequence
     }, []);
 
-    const NAV_CLASSES = "text-[11px] md:text-xs font-bold uppercase tracking-[0.15em] hover:text-white/80 transition-colors cursor-pointer hidden md:block";
+    const NAV_CLASSES = "text-[18px] md:text-xs font-normal tracking-[0.15em] hover:text-white/80 transition-colors cursor-pointer hidden md:block";
 
     return (
         <header
             ref={headerRef}
-            className="header fixed top-0 left-0 w-full px-8 py-6 flex justify-between items-center z-[9999] opacity-0 pointer-events-none text-white "
+            className="header absolute top-0 left-0 w-full px-8 py-6 flex justify-between items-center z-[9999]  text-white "
         >
             {/* Logo Area */}
             <div className="flex items-center">
@@ -27,7 +27,7 @@ export default function Header() {
             </div>
 
             {/* Navigation */}
-            <nav className="flex items-center gap-8 md:gap-12">
+            <nav className="flex items-center gap-8 md:gap-8 capitalize">
                 <a href="#" className={NAV_CLASSES}>Residential</a>
                 <a href="#" className={NAV_CLASSES}>Commercial</a>
                 <a href="#" className={NAV_CLASSES}>Land</a>
@@ -37,7 +37,7 @@ export default function Header() {
                 <button className="flex items-center justify-center w-8 h-8 md:ml-4 group">
                     <div className="space-y-1.5 ">
                         <span className="block w-6 h-[1.5px] bg-white group-hover:w-4 transition-all duration-300 ml-auto"></span>
-                        <span className="block w-6 h-[1.5px] bg-white"></span>
+                        <span className="block w-[16px] h-[1.5px] bg-white ml-auto"></span>
                         <span className="block w-6 h-[1.5px] bg-white group-hover:w-4 transition-all duration-300 ml-auto"></span>
                     </div>
                 </button>

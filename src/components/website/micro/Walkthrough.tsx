@@ -8,7 +8,7 @@ const videos = [
         id: 'WALKTHROUGH',
         label: 'WALKTHROUGH',
         thumbnail: '/images/micro/thumbnail.png', // Luxury interior placeholder
-        videoId: 'dQw4w9WgXcQ' // Placeholder ID - Rick Roll (classic placeholder) or generic real estate
+        videoId: 'zQ6SYXDmvmA' // Placeholder ID - Rick Roll (classic placeholder) or generic real estate
     },
     {
         id: 'LIFESTYLE',

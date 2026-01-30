@@ -1,8 +1,12 @@
 'use client';
-
+import gsap from 'gsap'
 import { useRef, useEffect } from 'react';
 import { staggerFadeUp } from '@/lib/animations';
+
 import { Library, Waves, PartyPopper, Dumbbell, Flower2, Utensils, Music, Baby } from 'lucide-react';
+import ScrollTrigger from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const amenities = [
     {
@@ -42,12 +46,32 @@ const amenities = [
 export default function Amenities() {
     const containerRef = useRef<HTMLDivElement>(null);
 
+    // useEffect(() => {
+    //     if (containerRef.current) {
+    //         const items = containerRef.current.querySelectorAll('.amenity-item');
+    //         staggerFadeUp(Array.from(items), 0, 0.05);
+    //     }
+    // }, []);
+
     useEffect(() => {
-        if (containerRef.current) {
-            const items = containerRef.current.querySelectorAll('.amenity-item');
-            staggerFadeUp(Array.from(items), 0, 0.05);
-        }
-    }, []);
+  const ctx = gsap.context(() => {
+    gsap.from('.amenity-item', {
+      y: 40,
+      opacity: 0,
+      duration: 0.8,
+      ease: 'power3.out',
+      stagger: 0.12,
+      scrollTrigger: {
+        trigger: '#amenities',
+        start: 'top 75%',
+        toggleActions: 'play none none none',
+      },
+    })
+  })
+
+  return () => ctx.revert()
+}, [])
+
 
     return (
         <section id="amenities" className="pb-[100px] bg-[#FEF7F0] text-center">
