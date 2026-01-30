@@ -117,7 +117,7 @@ const LocationMap = () => {
           </div>
 
         <div className='w-full relative'>
-            <div className='bg-white p-[20px] w-[300px] flex flex-col items-center gap-[20px] absolute top-0 left-[20%]'>
+            <div className='bg-white p-[20px] w-[300px] flex flex-col items-center gap-[20px] absolute top-0 left-[25%]'>
                 {data.map((item,index) =>(
                     <div key={index} className='w-full flex justify-between items-center text-black'><span>{item.title}</span> <span>{item.distance}</span></div>
                 ))}

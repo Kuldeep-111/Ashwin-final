@@ -10,7 +10,7 @@ export default function Header() {
         // Header visibility is controlled by MasterSequence
     }, []);
 
-    const NAV_CLASSES = "text-[18px] md:text-xs font-normal tracking-[0.15em] hover:text-white/80 transition-colors cursor-pointer hidden md:block";
+    const NAV_CLASSES = "text-[16px]  font-normal tracking-[0.15em] hover:text-white/80 transition-colors cursor-pointer hidden md:block";
 
     return (
         <header

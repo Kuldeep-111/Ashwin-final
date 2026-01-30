@@ -23,7 +23,7 @@ const Hero = () => {
 
   return (
     <section className='relative bg-white'>
-          <div className="h-[90vh] w-full relative bg-black">
+          <div className="h-[calc(100vh-180px)] w-full relative bg-black">
               <video
                   src="/videos/micro/hero.mp4"
                   autoPlay
@@ -35,7 +35,7 @@ const Hero = () => {
           </div>
 
             {/* Info Bar Overlay (Image 2 content) */}
-            <div className=" bg-[#FEF7F0] relative z-20 w-full  dark:bg-zinc-950 border-b border-black dark:border-zinc-800">
+            <div className="h-[180px] bg-[#FEF7F0] relative z-20 w-full  dark:bg-zinc-950 border-b border-black dark:border-zinc-800">
                 <div className="container mx-auto px-[50px] py-8">
                     <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
 
