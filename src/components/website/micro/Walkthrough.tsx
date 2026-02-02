@@ -54,7 +54,7 @@ export default function Walkthrough() {
             </div>
 
                 {/* Video Thumbnail / Presentation Area */}
-                <div data-direction="bottom" className="reveal-text relative h-[600px] w-full aspect-video md:aspect-[21/9] bg-black overflow-hidden shadow-2xl group cursor-pointer" onClick={() => setIsModalOpen(true)}>
+                <div data-direction="bottom" className="reveal-text relative h-[520px] w-full aspect-video md:aspect-[21/9] bg-black overflow-hidden shadow-2xl group cursor-pointer" onClick={() => setIsModalOpen(true)}>
                     {/* Thumbnail Image */}
                     <div
                         className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
