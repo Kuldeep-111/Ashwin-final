@@ -36,7 +36,7 @@ export default function Walkthrough() {
             <div className="container mx-auto px-6">
 
                 {/* Tabs */}
-                <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-12">
+                <div data-direction="bottom" className="reveal-text flex flex-wrap justify-center gap-4 md:gap-8 mb-12">
                     {videos.map(video => (
                         <button
                             key={video.id}
@@ -50,9 +50,11 @@ export default function Walkthrough() {
                         </button>
                     ))}
                 </div>
+                
+            </div>
 
                 {/* Video Thumbnail / Presentation Area */}
-                <div className="relative h-[500px] w-full aspect-video md:aspect-[21/9] bg-black rounded-lg overflow-hidden shadow-2xl group cursor-pointer" onClick={() => setIsModalOpen(true)}>
+                <div data-direction="bottom" className="reveal-text relative h-[600px] w-full aspect-video md:aspect-[21/9] bg-black overflow-hidden shadow-2xl group cursor-pointer" onClick={() => setIsModalOpen(true)}>
                     {/* Thumbnail Image */}
                     <div
                         className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
@@ -96,7 +98,6 @@ export default function Walkthrough() {
                     </div>
                 )}
 
-            </div>
         </section>
     );
 }

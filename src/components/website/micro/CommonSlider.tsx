@@ -19,7 +19,8 @@ interface CommonSliderProps<T> {
     renderItem: (item: T, index: number) => ReactNode;
     containerClass?: string;
     showProgress?: boolean;
-      breakpoints?: SwiperProps["breakpoints"];
+    loop?: boolean;
+    breakpoints?: SwiperProps["breakpoints"];
     
 }
 
@@ -31,6 +32,7 @@ const CommonSlider = <T,>({
     containerClass = "",
     showProgress = false,
     breakpoints,
+    loop,
 }: CommonSliderProps<T>) => {
     const [swiper, setSwiper] = useState<SwiperType | null>(null);
     const [progress, setProgress] = useState(0);
@@ -67,6 +69,7 @@ const CommonSlider = <T,>({
         <>
             <Swiper
                 modules={[Navigation]}
+                loop={loop}
                 slidesPerView={slidesPerView}
                 breakpoints={breakpoints}
                 spaceBetween={spaceBetween}
@@ -90,14 +93,14 @@ const CommonSlider = <T,>({
                     ref={prevRef}
                     className="w-[50px] h-[50px] flex items-center justify-center text-black rounded-full hover:border transition"
                 >
-                    <MdKeyboardArrowLeft size={22} />
+                    <MdKeyboardArrowLeft size={36} />
                 </button>
 
                 <button
                     ref={nextRef}
                     className="w-[50px] h-[50px] flex items-center justify-center text-black rounded-full hover:border transition"
                 >
-                    <MdKeyboardArrowRight size={22} />
+                    <MdKeyboardArrowRight size={36} />
                 </button>
             </div>
 

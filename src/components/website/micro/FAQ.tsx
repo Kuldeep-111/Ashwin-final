@@ -18,13 +18,13 @@ export default function FAQ() {
     return (
         <section id="faq" className="py-24 bg-white">
             <div className="container mx-auto px-6 max-w-4xl text-center">
-                <h2 className="text-3xl md:text-3xl font-normal text-[#E37D24] mb-16">
+                <h2  data-direction="bottom" className="reveal-text  text-[32px] leading-[50px]  font-normal text-[#E37D24] mb-16">
                     Frequently Asked Questions
                 </h2>
 
                 <div className="space-y-4">
                     {faqs.map((faq, idx) => (
-                        <div key={idx} className="bg-[#FFFBF7] rounded-lg text-left overflow-hidden">
+                        <div key={idx}  data-direction="bottom" className="reveal-text bg-[#FFFBF7] rounded-lg text-left overflow-hidden">
                             <button
                                 onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
                                 className="w-full flex items-center justify-between p-6 hover:bg-[#FDF6ED] transition-colors"

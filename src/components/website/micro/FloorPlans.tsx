@@ -47,12 +47,12 @@ const masterSlides = [
       <section className="pb-[100px] bg-[#FEF7F0]">
       <div className="container mx-auto px-[80px] text-center">
 
-        <h2 className="text-[38px] leading-[60px] tracking-[1px] font-normal text-[#E37D24] mb-12">
+        <h2  data-direction="bottom" className="reveal-text  text-[32px] leading-[50px]  tracking-[1px] font-normal text-[#E37D24] mb-12">
           Embrace The Seamless Fusion Of <br /> Living And Lifestyle
         </h2>
 
         {/* Tabs */}
-        <div className="flex justify-center gap-6 mb-16">
+        <div  data-direction="bottom" className="reveal-text flex justify-center gap-6 mb-16">
           <button
             onClick={() => setActiveTab('floorplan')}
             className={`px-8 py-3 rounded-md font-bold tracking-widest text-sm border
@@ -112,7 +112,7 @@ const masterSlides = [
                     <img
                       src={item.image}
                       alt={item.name}
-                      className="mx-auto h-[250px] object-contain"
+                      className="mx-auto h-[300px] object-contain"
                       onClick={() => {
     setLightboxIndex(idx);
     setLightboxOpen(true);

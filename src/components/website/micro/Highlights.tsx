@@ -17,11 +17,11 @@ export default function Highlights() {
     return (
         <section className="pb-[100px] bg-[#FEF7F0]">
             <div className="container mx-auto px-[80px] text-center">
-                <h2 className="text-[38px] leading-[60px] tracking-[1px] md:text-4xl font-normal text-[#E37D24] mb-12">
+                <h2  data-direction="bottom" className="reveal-text  text-[32px] leading-[50px]  tracking-[1px] md:text-4xl font-normal text-[#E37D24] mb-12">
                     Infuse Your Home With Values <br /> Of Smart Living
                 </h2>
 
-                <div className="flex justify-center gap-6 mb-16">
+                <div  data-direction="bottom" className="reveal-text flex justify-center gap-6 mb-16">
                     <button
                         onClick={() => setActiveTab('HIGHLIGHTS')}
                         className={`px-8 py-3 rounded-md font-bold tracking-widest text-sm transition-all border ${activeTab === 'HIGHLIGHTS' ? 'bg-[#1B4485] text-white border-[#1B4485]' : 'bg-transparent text-[#1B4485] border-[#1B4485]'}`}
@@ -37,7 +37,7 @@ export default function Highlights() {
                 </div>
 
                 {activeTab === 'HIGHLIGHTS' ? (
-                    <div className="grid md:grid-cols-3  bg-gray-200 ">
+                    <div  data-direction="bottom" className=" reveal-text grid md:grid-cols-3  bg-gray-200 ">
                         {features.map((feature, idx) => (
                             <div key={idx} className={`bg-white ${idx < 3 && "border-b"} border-black/20 py-10 px-[25px] flex  items-center justify-between gap-[50px]  transition-shadow z-10`}>
                                 <div>
@@ -59,7 +59,7 @@ export default function Highlights() {
 
 
             </div>
-            <div className='w-full mt-[100px]'>
+            <div  data-direction="bottom" className='reveal-text w-full mt-[100px]'>
                 <img src="/images/micro/highlights.jpg" alt="highlights"  className='h-[500px] w-full object-cover'/>
             </div>
         </section>

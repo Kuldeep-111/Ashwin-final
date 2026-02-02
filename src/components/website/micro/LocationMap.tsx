@@ -32,11 +32,11 @@ const LocationMap = () => {
     <section className="py-[50px] md:py-[100px] bg-[#FEF7F0] border-t border-black">
         <div className=''>
 
-               <h2 className="text-[38px] text-center leading-[60px] tracking-[1px] font-normal text-[#E37D24] mb-12">
+               <h2  data-direction="bottom" className="reveal-text text-center  text-[32px] leading-[50px]  tracking-[1px] font-normal text-[#E37D24] mb-12">
           Step Into Your Exclusive Haven
         </h2>
 
-         <div className="flex justify-center gap-6 mb-16">
+         <div  data-direction="bottom" className="reveal-text flex justify-center gap-6 mb-16">
           <button
             onClick={() => setActiveTab('eat-drink')}
             className={`px-8 py-3 rounded-md font-bold tracking-widest text-sm border
@@ -67,7 +67,7 @@ const LocationMap = () => {
            Attractions
           </button>
         </div>
-         <div className="relative max-w-[800px] mx-auto mb-[50px]">
+         <div  data-direction="bottom" className="reveal-text relative max-w-[800px] mx-auto mb-[50px]">
 
             {/* CENTER ARROWS (FIXED, NOT PER SLIDE) */}
             <button
