@@ -69,9 +69,9 @@ const Hero = () => {
                         <div className="flex flex-col items-start lg:items-end gap-6 min-w-max text-black">
                             <div className="text-left lg:text-right">
                                 <p className="text-2xl font-bold text-black">
-                                    ₹ 1.61 Cr - 1.89 Cr <span className="font-light text-lg">| ₹ 1.99 Lacs/Sq.Yd</span>
+                                    Home from 761 Sq. Ft. <span className="font-light text-lg">| Starting at 2.16 CR *</span>
                                 </p>
-                                <p className="text-xs text-black text-right">Onwards*</p>
+                                <p className="text-xs text-black text-right">Onwards</p>
                             </div>
                             <button onClick={() => setOpen(true)} className="px-8 py-2 bg-[#1B4485] tracking-[2px] text-white font-semibold rounded-md shadow-lg hover:bg-blue-800 transition-all w-full lg:w-auto">
                                 Contact Developer
