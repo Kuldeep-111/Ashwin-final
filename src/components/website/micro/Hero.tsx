@@ -38,7 +38,7 @@ const Hero = () => {
                         <div className="space-y-1 max-w-2xl">
                             <div className="flex items-center gap-4">
                                 <h2 className="text-[40px] font-normal tracking-[1px] capitalize text-black font-montserrat">
-                                    Ashwin Sheth
+                                     Sheth Edmont
                                 </h2>
 
                                 <div className="relative group inline-block">
@@ -55,12 +55,12 @@ const Hero = () => {
                                 </div>
 
                             </div>
-                            <p className="font-montserrat text-[14px] font-normal tracking-[1px] uppercase text-black">
-                                By Ashwin Sheth Group
-                            </p>
+                            {/* <p className="font-montserrat text-[14px] font-normal tracking-[1px] uppercase text-black">
+                                By Ashwin Sheth 
+                            </p> */}
 
                             <p className="font-montserrat text-[18px] font-normal tracking-[1px] capitalize text-black">
-                                Edmont - Kandivali West Mumbai
+                                 Kandivali West Mumbai
                             </p>
 
                         </div>
@@ -74,7 +74,7 @@ const Hero = () => {
                                 <p className="text-xs text-black text-right">Onwards*</p>
                             </div>
                             <button onClick={() => setOpen(true)} className="px-8 py-2 bg-[#1B4485] tracking-[2px] text-white font-semibold rounded-md shadow-lg hover:bg-blue-800 transition-all w-full lg:w-auto">
-                                Contact Developer
+                                Know More
                             </button>
                         </div>
 
