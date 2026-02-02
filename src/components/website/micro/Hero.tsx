@@ -37,7 +37,7 @@ const Hero = () => {
                         {/* Left: Project Details */}
                         <div className="space-y-1 max-w-2xl">
                             <div className="flex items-center gap-4">
-                                <h2 className="text-[40px] font-normal tracking-[1px] capitalize text-black font-montserrat">
+                                <h2 className="text-[40px] font-normal tracking-[1px] capitalize text-black ">
                                      Sheth Edmont
                                 </h2>
 
@@ -55,11 +55,11 @@ const Hero = () => {
                                 </div>
 
                             </div>
-                            {/* <p className="font-montserrat text-[14px] font-normal tracking-[1px] uppercase text-black">
+                            {/* <p className=" text-[14px] font-normal tracking-[1px] uppercase text-black">
                                 By Ashwin Sheth 
                             </p> */}
 
-                            <p className="font-montserrat text-[18px] font-normal tracking-[1px] capitalize text-black">
+                            <p className=" text-[18px] font-normal tracking-[1px] capitalize text-black">
                                  Kandivali West Mumbai
                             </p>
 

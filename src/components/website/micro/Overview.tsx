@@ -5,8 +5,16 @@ import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import EnquiryForm from '../common/form/EnquiryForm'
 import Link from 'next/link'
+import { div } from 'three/tsl'
 
 gsap.registerPlugin(ScrollTrigger)
+
+const data =[
+  {title:"apartments",desc:"2 & 3 Bed Residences"},
+  {title:"total area",desc:"2.02 acres"},
+  {title:"Total Units",desc:"249 in tower 1"},
+  {title:"status",desc:"Underdevelopment"},
+]
 
 
 const Overview = () => {
@@ -42,13 +50,13 @@ useEffect(() => {
         <div className='col-span-12 md:col-span-6'>
           <div className='flex flex-col items-center justify-center h-full'>
 
-            <h2 className="overview-animate w-full font-montserrat text-[32px] leading-[50px] font-normal tracking-[1px] capitalize text-[#F0801B] text-center">
+            <h2 className="overview-animate w-full text-[32px] leading-[50px] font-normal tracking-[1px] capitalize text-[#F0801B] text-center">
               Home to India’s Most Iconic Residential Lifestyle Experience
             </h2>
 
-            <p className="w-full overview-animate font-montserrat my-[50px] text-[16px] leading-[25px] font-normal tracking-[1px] text-black text-center">
+            <p className="w-full overview-animate my-[50px] text-[16px] leading-[25px] font-normal tracking-[1px] text-black text-center">
               Edmont by Ashwin Sheth Group is a landmark luxury development in Kandivali West, spread across 2.02 acres with three 51-storey towers. Designed for refined living, it offers elegantly crafted 2 & 3 BHK residences with sweeping views of Manori Creek and lush greens. Blending contemporary design with future-ready luxury, Edmont delivers a sophisticated lifestyle at one of Mumbai’s most coveted addresses. </p>
-            <button onClick={() => setOpen(true)} className="overview-animate font-montserrat text-[18px] pb-[5px] font-medium tracking-[1px] border-b border-[#0E4194] uppercase text-[#0E4194] text-center block w-fit mx-auto">
+            <button onClick={() => setOpen(true)} className="overview-animate text-[18px] pb-[5px] font-medium tracking-[1px] border-b border-[#0E4194] uppercase text-[#0E4194] text-center block w-fit mx-auto">
               Download Brochure
             </button>
           </div>
@@ -57,6 +65,20 @@ useEffect(() => {
           <img src="/images/micro/overview.jpg" alt="overview" className='h-[500px] object-contain' />
         </div>
 
+      </div>
+      <div className="px-[7%] grid md:grid-cols-4 md:gap-[50px] py-[10px] mt-[100px]">
+        {data.map((item,index) =>(
+          <div key={index} className='text-center'>
+            <h4 className="text-black text-center text-[24px] font-light tracking-[3px] capitalize">
+              {item.title}
+            </h4>
+
+            <p className="text-black mt-[20px] text-center text-[16px] font-normal tracking-[1px] uppercase">
+              {item.desc}
+            </p>
+
+          </div>
+        ))}
       </div>
       <EnquiryForm open={open} onClose={() => setOpen(false)} />
     </section>
