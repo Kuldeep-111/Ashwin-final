@@ -50,7 +50,7 @@ const Hero = () => {
                                     <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 
                   hidden group-hover:block
                   bg-black text-white text-xs px-2 py-1 rounded whitespace-nowrap">
-                                        RERA No: ABC123456
+                                        MahaRERA No. P51800053546
                                     </div>
                                 </div>
 
@@ -69,9 +69,9 @@ const Hero = () => {
                         <div className="flex flex-col items-start lg:items-end gap-6 min-w-max text-black">
                             <div className="text-left lg:text-right">
                                 <p className="text-2xl font-bold text-black">
-                                    Home from 761 Sq. Ft. <span className="font-light text-lg">| Starting at 2.16 CR *</span>
+                                   Starting at 2.16 CR*  <span className="font-light text-lg">| Home from 761 Sq. Ft.</span>
                                 </p>
-                                <p className="text-xs text-black text-right">Onwards</p>
+                                <p className="text-xs text-black text-right">Onwards*</p>
                             </div>
                             <button onClick={() => setOpen(true)} className="px-8 py-2 bg-[#1B4485] tracking-[2px] text-white font-semibold rounded-md shadow-lg hover:bg-blue-800 transition-all w-full lg:w-auto">
                                 Contact Developer
