@@ -17,7 +17,7 @@ export default function Highlights() {
     return (
         <section className="pb-[100px] bg-[#FEF7F0]">
             <div className="container mx-auto px-[80px] text-center">
-                <h2  data-direction="bottom" className="reveal-text  text-[32px] leading-[50px]  tracking-[1px] md:text-4xl font-normal text-[#E37D24] mb-12">
+                <h2  data-direction="bottom" className="reveal-text  text-[32px] leading-[50px]  tracking-[1px] md:text-4xl font-medium text-[#E37D24] mb-12">
                     Infuse Your Home With Values <br /> Of Smart Living
                 </h2>
 

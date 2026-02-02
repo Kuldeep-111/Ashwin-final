@@ -77,7 +77,7 @@ export default function Amenities() {
         <section id="amenities" className="pb-[100px] bg-[#FEF7F0] text-center">
             <div className="container mx-auto px-6">
                 <div className="mb-16 max-w-3xl mx-auto">
-                    <h2 data-direction="bottom" className="reveal-text text-3xl md:text-4xl leading-[60px] font-normal text-[#E37D24] mb-4">
+                    <h2 data-direction="bottom" className="reveal-text text-3xl md:text-4xl leading-[60px] font-medium text-[#E37D24] mb-4">
                         Stunning Luxury Prime Residences, <br /> Designed For Life
                     </h2>
                 </div>

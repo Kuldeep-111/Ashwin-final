@@ -32,7 +32,7 @@ const LocationMap = () => {
     <section className="py-[50px] md:py-[100px] bg-[#FEF7F0] border-t border-black">
         <div className=''>
 
-               <h2  data-direction="bottom" className="reveal-text text-center  text-[32px] leading-[50px]  tracking-[1px] font-normal text-[#E37D24] mb-12">
+               <h2  data-direction="bottom" className="reveal-text text-center  text-[32px] leading-[50px]  tracking-[1px] font-medium text-[#E37D24] mb-12">
           Step Into Your Exclusive Haven
         </h2>
 

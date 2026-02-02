@@ -18,7 +18,7 @@ export default function FAQ() {
     return (
         <section id="faq" className="py-24 bg-white">
             <div className="container mx-auto px-6 max-w-4xl text-center">
-                <h2  data-direction="bottom" className="reveal-text  text-[32px] leading-[50px]  font-normal text-[#E37D24] mb-16">
+                <h2  data-direction="bottom" className="reveal-text  text-[32px] leading-[50px]  font-medium text-[#E37D24] mb-16">
                     Frequently Asked Questions
                 </h2>
 

@@ -22,7 +22,7 @@ const Gallery = () => {
   return (
     <>
       <section className="bg-[#FEF7F0] pb-[50px] md:pb-[100px]">
-        <h2 data-direction="bottom" className="reveal-text  text-[32px] leading-[50px] font-normal tracking-[1px] capitalize text-[#F0801B] text-center">
+        <h2 data-direction="bottom" className="reveal-text  text-[32px] leading-[50px] font-medium  tracking-[1px] capitalize text-[#F0801B] text-center">
           photos gallery
         </h2>
 

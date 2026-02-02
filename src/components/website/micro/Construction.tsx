@@ -9,7 +9,7 @@ const Construction = () => {
 
   return (
     <section className="pb-[100px] bg-[#FEF7F0]">
-      <h2  data-direction="bottom" className="reveal-text text-[32px] leading-[50px]  tracking-[1px] md:text-4xl font-normal text-[#E37D24] mb-12 text-center">
+      <h2  data-direction="bottom" className="reveal-text text-[32px] leading-[50px]  tracking-[1px] md:text-4xl font-medium text-[#E37D24] mb-12 text-center">
         Construction Video
       </h2>
 

@@ -69,7 +69,7 @@ useEffect(() => {
       <div className="px-[7%] grid md:grid-cols-4 md:gap-[50px] py-[10px] mt-[100px]">
         {data.map((item,index) =>(
           <div key={index} className='text-center'>
-            <h4 className="text-black text-center text-[24px]  tracking-[3px] capitalize">
+            <h4 className="text-black text-center text-[24px] font-medium tracking-[3px] capitalize">
               {item.title}
             </h4>
 
