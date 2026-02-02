@@ -35,33 +35,45 @@ const Hero = () => {
                     <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
 
                         {/* Left: Project Details */}
-                        <div className="space-y-1 max-w-2xl">
-                            <div className="flex items-center gap-4">
+                        <div className="space-y-1 max-w-[600ppx]">
+                            <div className="flex items-center gap-[50px]">
+                                <div>
                                 <h2 className="text-[40px] font-normal tracking-[1px] capitalize text-black ">
                                      Sheth Edmont
                                 </h2>
+                                 <p className=" text-[18px] font-normal tracking-[1px] capitalize text-black">
+                                 Kandivali West Mumbai
+                            </p>
+                                </div>
+                                <div className="w-[1px] h-[80px] bg-black/20"></div>
+                                  <div className="flex items-center gap-6 w-full max-w-[300px]">
+                        {/* QR Code Placeholder */}
+                        <div className="bg-white p-1 border border-gray-200 h-fit">
+                           <img src="/images/micro/qr.png" alt="qr" className='w-[100px] h-[85px] object-contain'/>
+                        </div>
+                        <div className="text-xs text-black uppercase tracking-widest ">
+                            MahaRERA No. P51800053546
+                        </div>
+                    </div>
 
-                                <div className="relative group inline-block">
+                                {/* <div className="relative group inline-block">
                                     <button className="px-3 py-1 bg-[#E37D24] text-white text-xs font-bold uppercase tracking-wider rounded-sm hover:bg-orange-600 transition-colors">
                                         View RERA
                                     </button>
 
-                                    {/* Tooltip */}
                                     <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 
                   hidden group-hover:block
                   bg-black text-white text-xs px-2 py-1 rounded whitespace-nowrap">
                                         MahaRERA No. P51800053546
                                     </div>
-                                </div>
+                                </div> */}
 
                             </div>
                             {/* <p className=" text-[14px] font-normal tracking-[1px] uppercase text-black">
                                 By Ashwin Sheth 
                             </p> */}
 
-                            <p className=" text-[18px] font-normal tracking-[1px] capitalize text-black">
-                                 Kandivali West Mumbai
-                            </p>
+                           
 
                         </div>
 

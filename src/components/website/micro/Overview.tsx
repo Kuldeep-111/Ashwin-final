@@ -50,7 +50,7 @@ useEffect(() => {
         <div className='col-span-12 md:col-span-6'>
           <div className='flex flex-col items-center justify-center h-full'>
 
-            <h2 className="overview-animate w-full text-[32px] leading-[50px] font-normal tracking-[1px] capitalize text-[#F0801B] text-center">
+            <h2 className="overview-animate w-full text-[32px] leading-[50px] font-medium tracking-[1px] capitalize text-[#F0801B] text-center">
               Home to India’s Most Iconic Residential Lifestyle Experience
             </h2>
 
