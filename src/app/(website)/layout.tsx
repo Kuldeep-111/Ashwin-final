@@ -5,6 +5,7 @@ import SmoothScroll from "@/components/SmoothScroll";
 import Header from "@/components/Header";
 import Loader from "@/components/Loader";
 import EnquiryForm from "@/components/website/common/form/EnquiryForm";
+import { TransitionProvider } from "@/context/TransitionContext";
 
 export default function WebsiteLayout({
   children,
@@ -15,7 +16,8 @@ export default function WebsiteLayout({
 
   return (
     <SmoothScroll>
-      <Loader />
+      {/* <TransitionProvider> */}
+      {/* <Loader /> */}
       <Header />
 
       {/* Floating Enquiry Button */}
@@ -32,6 +34,7 @@ export default function WebsiteLayout({
       <EnquiryForm open={open} onClose={() => setOpen(false)} />
 
       <main>{children}</main>
+      {/* </TransitionProvider> */}
     </SmoothScroll>
   );
 }

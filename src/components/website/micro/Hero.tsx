@@ -30,7 +30,7 @@ const Hero = () => {
             </div>
 
             {/* Info Bar Overlay (Image 2 content) */}
-            <div data-direction="top" className="h-[150px] flex items-center justify-center reveal-text bg-[#FEF7F0] relative z-20 w-full  dark:bg-zinc-950 border-b border-black dark:border-zinc-800">
+            <div data-direction="top" className="h-[150px] py-[10px] flex items-center justify-center reveal-text bg-[#FEF7F0] relative z-20 w-full  dark:bg-zinc-950 border-b border-black dark:border-zinc-800">
                 <div className="container mx-auto px-[50px]">
                     <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
 
@@ -79,13 +79,15 @@ const Hero = () => {
                         </div>
 
                         {/* Right: Price & CTA */}
-                        <div className="flex flex-col items-start lg:items-end gap-6 min-w-max text-black">
+                        <div className="flex flex-col items-start lg:items-end  gap-[10px] min-w-max text-black">
                             <div className="text-left lg:text-right">
                                 <p className="text-2xl font-bold text-black">
-                                    Starting at 2.16 CR*  <span className="font-light text-lg">| Home from 761 Sq. Ft.</span>
+                                    Starting at 2.16 CR*  <span className="font-light text-lg">| Home from 761 Sq. Ft. </span> <span className="font-light text-[12px]">Onwards*</span>
                                 </p>
-                                <p className="text-xs text-black text-right">Onwards*</p>
+                                
+                                {/* <p className="text-xs text-black text-right">Onwards*</p> */}
                             </div>
+                                <p className="text-[20px] text-black text-right">Status - Under construction</p>
                             <button onClick={() => setOpen(true)} className="px-8 py-2 bg-[#1B4485] tracking-[2px] text-white font-semibold rounded-md shadow-lg hover:bg-blue-800 transition-all w-full lg:w-auto">
                                 Know More
                             </button>
