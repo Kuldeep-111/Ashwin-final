@@ -19,14 +19,14 @@ const Hero = () => {
                     playsInline
                     className="w-full h-full object-cover object-bottom"
                 />
-                 {/* GRADIENT OVERLAY */}
-    <div
-      className="pointer-events-none absolute inset-0"
-      style={{
-        background:
-          "linear-gradient(180deg, #3F60A6 0%, rgba(155, 176, 221, 0) 27.5%)",
-      }}
-    />
+                {/* GRADIENT OVERLAY */}
+                <div
+                    className="pointer-events-none absolute inset-0"
+                    style={{
+                        background:
+                            "linear-gradient(180deg, #3F60A6 0%, rgba(155, 176, 221, 0) 27.5%)",
+                    }}
+                />
             </div>
 
             {/* Info Bar Overlay (Image 2 content) */}
@@ -38,23 +38,24 @@ const Hero = () => {
                         <div className="space-y-1 max-w-[600ppx]">
                             <div className="flex items-center gap-[50px]">
                                 <div>
-                                <h2 className="text-[40px] font-normal tracking-[1px] capitalize text-black ">
-                                     Sheth Edmont
-                                </h2>
-                                 <p className=" text-[18px] font-normal tracking-[1px] capitalize text-black">
-                                 Kandivali West Mumbai
-                            </p>
+                                    {/* <h2 className="text-[40px] font-normal tracking-[1px] capitalize text-black ">
+                                        Sheth Edmont
+                                    </h2> */}
+                                    <img src="/images/micro/edmont.png" alt="edmont" className="w-[200px] h-[80px] object-contain"/>
+                                    <p className=" text-[18px] font-normal tracking-[1px] capitalize text-black">
+                                        Kandivali West Mumbai
+                                    </p>
                                 </div>
                                 <div className="w-[1px] h-[80px] bg-black/20"></div>
-                                  <div className="flex items-center gap-6 w-full max-w-[300px]">
-                        {/* QR Code Placeholder */}
-                        <div className="bg-white p-1 border border-gray-200 h-fit">
-                           <img src="/images/micro/qr.png" alt="qr" className='w-[100px] h-[85px] object-contain'/>
-                        </div>
-                        <div className="text-xs text-black uppercase tracking-widest ">
-                            MahaRERA No. P51800053546
-                        </div>
-                    </div>
+                                <div className="flex items-center gap-6 w-full max-w-[300px]">
+                                    {/* QR Code Placeholder */}
+                                    <div className="bg-white p-1 border border-gray-200 h-fit">
+                                        <img src="/images/micro/qr.png" alt="qr" className='w-[100px] h-[85px] object-contain' />
+                                    </div>
+                                    <div className="text-xs text-black uppercase tracking-widest ">
+                                        MahaRERA No. P51800053546
+                                    </div>
+                                </div>
 
                                 {/* <div className="relative group inline-block">
                                     <button className="px-3 py-1 bg-[#E37D24] text-white text-xs font-bold uppercase tracking-wider rounded-sm hover:bg-orange-600 transition-colors">
@@ -73,7 +74,7 @@ const Hero = () => {
                                 By Ashwin Sheth 
                             </p> */}
 
-                           
+
 
                         </div>
 
@@ -81,7 +82,7 @@ const Hero = () => {
                         <div className="flex flex-col items-start lg:items-end gap-6 min-w-max text-black">
                             <div className="text-left lg:text-right">
                                 <p className="text-2xl font-bold text-black">
-                                   Starting at 2.16 CR*  <span className="font-light text-lg">| Home from 761 Sq. Ft.</span>
+                                    Starting at 2.16 CR*  <span className="font-light text-lg">| Home from 761 Sq. Ft.</span>
                                 </p>
                                 <p className="text-xs text-black text-right">Onwards*</p>
                             </div>

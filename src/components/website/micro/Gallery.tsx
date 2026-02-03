@@ -4,6 +4,7 @@ import CommonSlider from "./CommonSlider"
 import Image from "next/image"
 import Lightbox from "yet-another-react-lightbox"
 import useGsapReveal from '@/hooks/useGsapReveal'
+import CardsSlider from "../common/slider/CardsSlider"
 
 const data = [
   { src: "/images/micro/gallery/1.jpg", alt: "image 1" },
@@ -26,19 +27,15 @@ const Gallery = () => {
           photos gallery
         </h2>
 
-        <div className="mt-[50px]">
-          <CommonSlider
+        <div className="mt-[50px] md:w-[60%] mx-auto">
+          <CardsSlider
             data={data}
             loop={true}
-            slidesPerView={2.5}
-            breakpoints={{
-              0: { slidesPerView: 1 },
-              768: { slidesPerView: 2.5 },
-            }}
-            spaceBetween={0}
-            renderItem={(item, i) => (
+              containerClassName="w-full"
+
+            renderCard={(item, i) => (
               <div
-                className="relative cursor-pointer group h-[350px]"
+                className="relative cursor-pointer group h-[450px] 2xl:h-[500px]"
                 onClick={() => {
                   setIndex(i)
                   setOpen(true)
