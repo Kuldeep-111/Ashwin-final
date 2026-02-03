@@ -15,7 +15,7 @@ import React from 'react'
 const page = () => {
   return (
     <>
-    {/* <SpotlightOverlay/> */}
+    <SpotlightOverlay/>
     <Hero/>
     <Overview/>
     <Gallery/>

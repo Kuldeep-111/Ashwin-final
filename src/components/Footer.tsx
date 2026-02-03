@@ -145,7 +145,7 @@ export default function Footer() {
         {/* ================= HEADER WITH LOGO & NAV ================= */}
         <div className="w-full ">
           {/* Logo Section */}
-          <div className="flex flex-col items-center pt-6 md:pt-22">
+          {/* <div className="flex flex-col items-center pt-6 md:pt-22">
             <div className="mb-4">
               <Image
                 src="/footerblack.png"
@@ -155,7 +155,13 @@ export default function Footer() {
                 className="w-full"
               />
             </div>
-          </div>
+          </div> */}
+          
+      <div className='border p-[20px] gap-[110px] flex items-center justify-center md:w-[60%] mx-auto mt-[80px] mb-[100px]'>
+        <img src="/images/micro/logo-1.png" alt="logo" className='w-[150px] h-[100px] object-contain' />
+        <div className='w-[1px] h-[80px] bg-black/40'></div>
+        <img src="/images/micro/logo.png" alt="logo" className='w-[150px] h-[100px] object-contain' />
+      </div>
 
           {/* Navigation */}
           <div className="">
@@ -166,7 +172,7 @@ export default function Footer() {
                     <Link
                       key={item}
                       href="#"
-                      className="text-xs md:text-sm text-black font-light tracking-[0.15em] hover:text-black/60 transition-colors duration-300"
+                      className="text-xs font-medium md:text-sm text-black  tracking-[0.15em] hover:text-black/60 transition-colors duration-300"
                     >
                       {item}
                     </Link>
@@ -190,7 +196,7 @@ export default function Footer() {
                 aria-expanded={accordionOpen}
                 aria-controls="footer-accordion"
               >
-                <span className="text-sm flex gap-2 items-center font-light tracking-[0.1em] group-hover:tracking-[0.15em] transition-all duration-300">
+                <span className="text-sm flex gap-2 items-center font-medium tracking-[0.1em] group-hover:tracking-[0.15em] transition-all duration-300">
                   EXPLORE ALL LINKS
                   <div ref={accordionIconRef} className="inline-flex">
                     <ChevronDown className="w-5 h-5" />
@@ -209,7 +215,7 @@ export default function Footer() {
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 pb-12 md:pb-16 pt-8">
                 {/* Quick Links */}
                 <div>
-                  <h3 className="text-xs md:text-sm uppercase tracking-[0.15em] font-light mb-4 md:mb-6 text-black/80">
+                  <h3 className="text-xs md:text-sm uppercase tracking-[0.15em] font-medium mb-4 md:mb-6 text-black/80">
                     Quick Links
                   </h3>
                   <ul className="space-y-3">
@@ -223,7 +229,7 @@ export default function Footer() {
                       <li key={item}>
                         <Link
                           href="#"
-                          className="text-black/60 hover:text-black transition-colors text-xs md:text-sm font-light"
+                          className="text-black/60 hover:text-black transition-colors text-xs md:text-sm font-medium"
                         >
                           {item}
                         </Link>
@@ -234,7 +240,7 @@ export default function Footer() {
 
                 {/* Categories */}
                 <div>
-                  <h3 className="text-xs md:text-sm uppercase tracking-[0.15em] font-light mb-4 md:mb-6 text-black/80">
+                  <h3 className="text-xs md:text-sm uppercase tracking-[0.15em] font-medium mb-4 md:mb-6 text-black/80">
                     Categories
                   </h3>
                   <ul className="space-y-3">
@@ -248,7 +254,7 @@ export default function Footer() {
                       <li key={item}>
                         <Link
                           href="#"
-                          className="text-black/60 hover:text-black transition-colors text-xs md:text-sm font-light"
+                          className="text-black/60 hover:text-black transition-colors text-xs md:text-sm font-medium"
                         >
                           {item}
                         </Link>
@@ -259,7 +265,7 @@ export default function Footer() {
 
                 {/* Services */}
                 <div>
-                  <h3 className="text-xs md:text-sm uppercase tracking-[0.15em] font-light mb-4 md:mb-6 text-black/80">
+                  <h3 className="text-xs md:text-sm uppercase tracking-[0.15em] font-medium mb-4 md:mb-6 text-black/80">
                     Services
                   </h3>
                   <ul className="space-y-3">
@@ -273,7 +279,7 @@ export default function Footer() {
                       <li key={item}>
                         <Link
                           href="#"
-                          className="text-black/60 hover:text-black transition-colors text-xs md:text-sm font-light"
+                          className="text-black/60 hover:text-black transition-colors text-xs md:text-sm font-medium"
                         >
                           {item}
                         </Link>
@@ -284,10 +290,10 @@ export default function Footer() {
 
                 {/* Contact */}
                 <div>
-                  <h3 className="text-xs md:text-sm uppercase tracking-[0.15em] font-light mb-4 md:mb-6 text-black/80">
+                  <h3 className="text-xs md:text-sm uppercase tracking-[0.15em] font-medium mb-4 md:mb-6 text-black/80">
                     Contact Us
                   </h3>
-                  <ul className="space-y-3 text-black/60 text-xs md:text-sm font-light">
+                  <ul className="space-y-3 text-black/60 text-xs md:text-sm font-medium">
                     <li>
                       Ashwin Sheth Group
                       <br />
@@ -319,44 +325,44 @@ export default function Footer() {
         </div>
 
         {/* ================= MAIN CONTENT ================= */}
-        <div className="flex-1 flex items-center">
+        <div className="flex-1 flex items-center justify-center">
           <div className="w-full mx-auto px-6 md:px-12 py-8 md:py-12 w-full">
             <div className="w-full">
-              <div className="max-w-3xl">
-                <h3 className="text-xs md:text-sm text-black leading-[32px] tracking-[2px] mb-4">
+              <div className="max-w-3xl mx-auto">
+                <h3 className="text-xs md:text-sm font-medium text-center text-black leading-[32px] tracking-[2px] mb-4">
                   Welcome To Ashwinsheth Group!
                 </h3>
-                <p className="text-xs md:text-sm text-black leading-[24px]  tracking-[2px] mb-4">
+                <p className="text-xs md:text-sm text-black  text-center font-medium leading-[24px]  tracking-[2px] mb-4">
                   These Terms And Conditions Outline The Rules And Regulations For
                   The Use Of Ashwinsheth Group Website, Located At
                   Https://Www.Ashwinshethgroup.Com/.
                 </p>
               </div>
 
-              <div className="flex justify-between w-full items-center">
+              <div className="relative flex justify-center gap-[10px] w-full items-center mx-auto">
                 <div className="flex flex-wrap gap-2 md:gap-3 text-xs md:text-sm">
                   <Link
                     href="#"
-                    className="text-xs md:text-sm text-black leading-[24px]  tracking-[2px] transition-colors"
+                    className="text-xs md:text-sm font-medium text-black leading-[24px]  tracking-[2px] transition-colors"
                   >
                     Privacy Policy
                   </Link>
                   <span className="text-black">|</span>
                   <Link
                     href="#"
-                    className="text-xs md:text-sm text-black leading-[24px]  tracking-[2px] transition-colors"
+                    className="text-xs md:text-sm font-medium text-black leading-[24px]  tracking-[2px] transition-colors"
                   >
                     Disclaimer
                   </Link>
                   <span className="text-black">|</span>
                   <Link
                     href="#"
-                    className="text-xs md:text-sm text-black leading-[24px]  tracking-[2px] transition-colors"
+                    className="text-xs md:text-sm font-medium text-black leading-[24px]  tracking-[2px] transition-colors"
                   >
                     Term & Conditions
                   </Link>
                 </div>
-                <div className="flex items-center gap-6">
+                <div className="absolute right-0 bottom-0 flex items-center gap-6">
                   {/* Phone Icon */}
                   <Link
                     href="tel:+911234567890"
@@ -386,11 +392,11 @@ export default function Footer() {
         <div className="border-t border-black/10">
           <div className="w-full mx-auto px-6 md:px-12 py-6 md:py-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6">
-              <p className="text-xs text-black font-light text-center md:text-left">
+              <p className="text-xs text-black font-semibold text-center md:text-left">
                 Copyright © 2025 - Ashwin Sheth Group | All Rights Reserved
               </p>
 
-              <p className="text-xs text-black font-light text-center md:text-right">
+              <p className="text-xs text-black font-semibold text-center md:text-right">
                 Created BY: GTF Technologies
               </p>
             </div>

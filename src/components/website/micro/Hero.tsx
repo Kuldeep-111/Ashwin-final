@@ -10,7 +10,7 @@ const Hero = () => {
 
     return (
         <section className='relative bg-white'>
-            <div className="h-[calc(100vh-150px)] w-full relative bg-black">
+            <div className="h-[calc(100vh)] 2xl:h-[calc(100vh-150px)] w-full relative bg-black">
                 <video
                     src="/videos/micro/hero.mp4"
                     autoPlay

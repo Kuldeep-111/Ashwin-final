@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Loader from "@/components/Loader";
 import EnquiryForm from "@/components/website/common/form/EnquiryForm";
 import { TransitionProvider } from "@/context/TransitionContext";
+import Footer from "@/components/Footer";
 
 export default function WebsiteLayout({
   children,
@@ -34,6 +35,7 @@ export default function WebsiteLayout({
       <EnquiryForm open={open} onClose={() => setOpen(false)} />
 
       <main>{children}</main>
+      <Footer/>
       {/* </TransitionProvider> */}
     </SmoothScroll>
   );
