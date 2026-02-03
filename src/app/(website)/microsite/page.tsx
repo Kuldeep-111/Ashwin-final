@@ -1,3 +1,4 @@
+import SpotlightOverlay from '@/components/website/common/transition/SpotlightOverlay'
 import Amenities from '@/components/website/micro/Amenities'
 import Construction from '@/components/website/micro/Construction'
 import FAQ from '@/components/website/micro/FAQ'
@@ -14,12 +15,13 @@ import React from 'react'
 const page = () => {
   return (
     <>
+    {/* <SpotlightOverlay/> */}
     <Hero/>
     <Overview/>
     <Gallery/>
     <Amenities/>
     <Walkthrough/>
-    <Highlights/>
+    {/* <Highlights/> */}
     <FloorPlans/>
     <LocationMap/>
     <Construction/>
