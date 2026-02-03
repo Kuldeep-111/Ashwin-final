@@ -55,7 +55,7 @@ export const LOCATION_DATA = [
       {
         key: "metro",
         name: "Metro Station",
-        image: "/images/micro/location/restaurants.png",
+        image: "/images/micro/location/metro.png",
         places: [
           { title: "Lower Juhu Metro Station", distance: "1.6 km" },
           { title: "Oshiwara–Ram Mandir Metro Station", distance: "2.4 km" },
@@ -64,7 +64,7 @@ export const LOCATION_DATA = [
       {
         key: "railway",
         name: "Railway Station",
-        image: "/images/micro/location/restaurants.png",
+        image: "/images/micro/location/train-station.png",
         places: [
           { title: "Kandivali Railway Station", distance: "1.4 km" },
           { title: "Malad Railway Station", distance: "3.2 km" },
@@ -73,7 +73,7 @@ export const LOCATION_DATA = [
       {
         key: "bus",
         name: "Bus Stops",
-        image: "/images/micro/location/restaurants.png",
+        image: "/images/micro/location/bus-stop.png",
         places: [
           { title: "Jain Mandir Bus Stop", distance: "0.4 km" },
           { title: "Kala Maruti Mandir Bus Stop", distance: "0.6 km" },
@@ -88,7 +88,7 @@ export const LOCATION_DATA = [
       {
         key: "parks",
         name: "Parks & Open Spaces",
-        image: "/images/micro/location/restaurants.png",
+        image: "/images/micro/location/park.png",
         places: [
           { title: "Kamala Vihar Joggers’ Park", distance: "0.8 km" },
           { title: "Panchasheel Joggers’ Park", distance: "1.1 km" },
@@ -98,7 +98,7 @@ export const LOCATION_DATA = [
       {
         key: "shopping",
         name: "Shopping & Entertainment",
-        image: "/images/micro/location/restaurants.png",
+        image: "/images/micro/location/cinema.png",
         places: [
           { title: "Raghuleela Mall", distance: "1.9 km" },
           { title: "Mahavir Nagar", distance: "1.0 km" },
@@ -108,7 +108,7 @@ export const LOCATION_DATA = [
       {
         key: "culture",
         name: "Leisure & Culture",
-        image: "/images/micro/location/restaurants.png",
+        image: "/images/micro/location/leisure.png",
         places: [
           { title: "Mayur Cinema", distance: "0.9 km" },
           { title: "Mindspace Malad", distance: "5.5 km" },
