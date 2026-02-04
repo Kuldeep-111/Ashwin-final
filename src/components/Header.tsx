@@ -2,6 +2,7 @@
 
 import { useLayoutEffect, useRef } from 'react';
 import { Menu } from 'lucide-react'; // Using lucide-react for the hamburger icon if available, or SVG
+import TransitionLink from './website/common/transition/TransitionLink';
 
 export default function Header() {
     const headerRef = useRef<HTMLElement>(null);
@@ -28,7 +29,9 @@ export default function Header() {
 
             {/* Navigation */}
             <nav className="flex items-center gap-8 md:gap-8 capitalize">
-                <a href="#" className={NAV_CLASSES}>Residential</a>
+                <TransitionLink href='microsite' className={NAV_CLASSES}>Residential</TransitionLink>
+                <TransitionLink href='commercial' className={NAV_CLASSES}>Commercial</TransitionLink>
+                {/* <a href="#" className={NAV_CLASSES}>Residential</a> */}
                 <a href="#" className={NAV_CLASSES}>Commercial</a>
                 <a href="#" className={NAV_CLASSES}>Land</a>
                 <a href="#" className={NAV_CLASSES}>The Orange Circle</a>
