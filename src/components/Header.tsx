@@ -32,7 +32,7 @@ export default function Header() {
                 <TransitionLink href='/microsite' className={NAV_CLASSES}>Residential</TransitionLink>
                 <TransitionLink href='/commercial' className={NAV_CLASSES}>Commercial</TransitionLink>
                 {/* <a href="#" className={NAV_CLASSES}>Residential</a> */}
-                <a href="#" className={NAV_CLASSES}>Commercial</a>
+                {/* <a href="#" className={NAV_CLASSES}>Commercial</a> */}
                 <a href="#" className={NAV_CLASSES}>Land</a>
                 <a href="#" className={NAV_CLASSES}>The Orange Circle</a>
 
