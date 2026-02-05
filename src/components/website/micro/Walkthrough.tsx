@@ -7,7 +7,7 @@ const videos = [
     {
         id: 'WALKTHROUGH',
         label: 'WALKTHROUGH',
-        thumbnail: '/images/micro/thumbnail.png', // Luxury interior placeholder
+        thumbnail: '/images/micro/youtube-thumbnail.webp', // Luxury interior placeholder
         videoId: 'zQ6SYXDmvmA' // Placeholder ID - Rick Roll (classic placeholder) or generic real estate
     },
     {
@@ -67,7 +67,7 @@ export default function Walkthrough() {
             {/* Video Thumbnail / Presentation Area */}
             <div
                 data-direction="bottom"
-                className={`reveal-text relative h-[450px] 2xl:h-[520px] w-full aspect-video md:aspect-[21/9] overflow-hidden shadow-2xl group ${isComingSoon ? 'bg-[#1B4485]/10 cursor-not-allowed' : 'bg-black cursor-pointer'
+                className={`reveal-text relative h-[90vh] w-full mx-auto aspect-video md:aspect-[21/9] overflow-hidden shadow-2xl group ${isComingSoon ? 'bg-[#1B4485]/10 cursor-not-allowed' : 'bg-black cursor-pointer'
                     }`}
                 onClick={() => {
                     if (!isComingSoon) {
@@ -81,7 +81,7 @@ export default function Walkthrough() {
                     <>
                         {/* Thumbnail */}
                         <div
-                            className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
+                            className="absolute inset-0 bg-cover bg-top transition-transform duration-700"
                             style={{ backgroundImage: `url(${currentVideo.thumbnail})` }}
                         />
 
