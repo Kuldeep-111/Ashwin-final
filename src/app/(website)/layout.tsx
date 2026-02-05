@@ -8,6 +8,7 @@ import EnquiryForm from "@/components/website/common/form/EnquiryForm";
 import { TransitionProvider } from "@/context/TransitionContext";
 import Footer from "@/components/Footer";
 import SpotlightOverlay from "@/components/website/common/transition/SpotlightOverlay";
+import { usePathname } from "next/navigation";
 
 export default function WebsiteLayout({
   children,
@@ -15,12 +16,16 @@ export default function WebsiteLayout({
   children: React.ReactNode;
 }) {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+
+  const ishome = pathname === "/"
 
   return (
     <SmoothScroll>
       <TransitionProvider>
-      {/* <Loader /> */}
-    <SpotlightOverlay/>
+        {ishome ? 
+      <Loader /> : 
+    <SpotlightOverlay/>}
       <Header />
 
       {/* Floating Enquiry Button */}
