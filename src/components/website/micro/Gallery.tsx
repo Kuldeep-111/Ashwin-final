@@ -6,12 +6,12 @@ import Lightbox from "yet-another-react-lightbox"
 import useGsapReveal from '@/hooks/useGsapReveal'
 
 const data = [
-  { src: "/images/micro/gallery/1.jpg", alt: "image 1" },
-  { src: "/images/micro/gallery/2.jpg", alt: "image 2" },
-  { src: "/images/micro/gallery/3.jpg", alt: "image 3" },
-  { src: "/images/micro/gallery/4.webp", alt: "image 4" },
-  { src: "/images/micro/gallery/5.webp", alt: "image 5" },
-  { src: "/images/micro/gallery/6.webp", alt: "image 6" },
+  { src: "/images/micro/gallery/1.jpg", alt: "Swimming Pool " },
+  { src: "/images/micro/gallery/2.jpg", alt: "Project Elevation" },
+  { src: "/images/micro/gallery/3.jpg", alt: "Play Area & Park" },
+  { src: "/images/micro/gallery/4.webp", alt: "Living Room" },
+  { src: "/images/micro/gallery/5.webp", alt: "Master Bed Room" },
+  { src: "/images/micro/gallery/6.webp", alt: "Bathroom" },
 ]
 
 const Gallery = () => {
@@ -38,6 +38,7 @@ const Gallery = () => {
             }}
             spaceBetween={20}
             renderItem={(item, i) => (
+              <div className="relative pb-[50px]">
               <div
                 className="relative cursor-pointer group h-[550px]"
                 onClick={() => {
@@ -51,6 +52,9 @@ const Gallery = () => {
                   fill
                   className="object-cover"
                 />
+                <span className="uppercase absolute bottom-[10px] left-[50px] bg-black/10 p-[10px]">Render Image</span>
+              </div>
+              <p className="text-center  w-fit absolute right-[35%] bottom-0 mt-[50px] uppercase text-[18px] font-medium tracking-[1px]  text-black">{item.alt}</p>
               </div>
             )}
           />
